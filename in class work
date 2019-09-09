@@ -1,0 +1,31 @@
+package com.company;
+
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+
+		String name = keyboard.nextLine();
+		double gpa = keyboard.nextDouble();
+		double majorgpa = keyboard.nextDouble();
+		int credits = keyboard.nextInt();
+		double acct = keyboard.nextDouble();
+
+
+		System.out.print("Name:" + name);
+		System.out.print("GPA:" + gpa);
+		System.out.print("Major Gpa" + majorgpa);
+		System.out.print("Credits:" + credits);
+		System.out.print("Account Balance" + acct);
+
+
+		if (gpa >= 1.0 && majorgpa >= 2.5 && credits >= 120 && acct == 0.0) {
+			System.out.print("Can Graduate");
+		} else {
+			System.out.print("Can NOT Graduate");
+		}
+
+		System.out.print(name.charAt(1));
+	}
+}
